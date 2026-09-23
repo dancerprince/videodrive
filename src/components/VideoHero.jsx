@@ -104,8 +104,7 @@ const VideoHero = ({
                         title={title}
                         allow='autoplay; fullscreen; encrypted-media; picture-in-picture'
                         referrerPolicy='strict-origin-when-cross-origin'
-                        frameBorder='0'
-                        className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                        className='absolute top-1/2 left-1/2 border-0 -translate-x-1/2 -translate-y-1/2
                                    w-full h-full min-w-[177.77vh] min-h-[56.25vw]
                                    scale-125 pointer-events-none select-none'
                     />
