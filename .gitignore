@@ -21,6 +21,7 @@ pnpm-debug.log*
 # Editor / OS
 .vscode/*
 !.vscode/extensions.json
+.zcode/
 .idea/
 .DS_Store
 *.suo

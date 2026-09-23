@@ -17,7 +17,7 @@ Completely independent — no connection to MovieMars or any other project.
 ## Run
 
 ```bash
-cd "video code"
+cd "Video code"
 npm install
 npm run dev
 ```
@@ -97,7 +97,7 @@ Layer 1  the video          (masked to fade out at the bottom)
 ## Structure
 
 ```
-video code/
+Video code/
 ├── index.html
 ├── package.json
 ├── vite.config.js
