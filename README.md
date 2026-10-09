@@ -25,8 +25,18 @@ npm run dev
 
 The share URL is stored in this browser's local storage. WorkDrive guest credentials are fetched per request by the server and are not saved. Empty the setting to use `public/videos.json` instead.
 
+## Deploy to GitHub Pages
+
+The repository deploys automatically to GitHub Pages when changes are pushed to `master`. The workflow builds the Vite app with the `/videodrive/` base path and publishes `dist/`.
+
+Enable **Settings → Pages → Build and deployment → Source → GitHub Actions** in the repository if Pages is not already configured. After the workflow completes, the site is available at:
+
+`https://dancerprince.github.io/videodrive/`
+
+GitHub Pages is static hosting and cannot run the WorkDrive folder-listing middleware. The deployed site can display videos from `public/videos.json`, but entering an external-share folder URL will not list its videos until the listing proxy is hosted separately (for example, as a serverless function) and the app is configured to use that service.
+
 ## Limitations
 
 - Zoho's external-share guest API is undocumented and may change.
-- The integration needs the Vite server middleware (`npm run dev` / `npm run preview`). Static hosting alone does not provide `/folder-listing`; deployment needs a server/serverless equivalent.
+- The WorkDrive integration needs the Vite server middleware (`npm run dev` / `npm run preview`) or a separately hosted server/serverless equivalent.
 - Only files directly inside the shared folder are currently listed (not nested subfolders).
