@@ -1,0 +1,7 @@
+{
+  "videos": [
+    { "name": "Big_Buck_Bunny.mp4", "url": "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/1080/Big_Buck_Bunny_1080_10s_5MB.mp4" },
+    { "name": "Sintel_trailer.mp4", "url": "https://media.w3.org/2010/05/sintel/trailer.mp4" },
+    { "name": "Bunny_360.webm", "url": "https://test-videos.co.uk/vids/bigbuckbunny/webm/vp9/360/Big_Buck_Bunny_360_10s_1MB.webm" }
+  ]
+}

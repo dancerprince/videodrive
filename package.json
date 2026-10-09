@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "test": "node --test src/lib/*.test.mjs"
+    "test": "node --test src/**/*.test.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
